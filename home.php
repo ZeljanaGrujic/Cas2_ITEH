@@ -39,16 +39,13 @@
         <table id="myTable" class="table table-hover table-striped" style="color: black; background-color: grey;" >
             <thead class ="thead">
             <tr >
-                <th scope="col">Predmet polaganja</th>
+                <th scope="col">Predmet</th>
                 <th scope="col">Katedra</th>    
                 <th scope="col">Sala</th>
-                <th scope="col">Datum kolokvijuma</th>
+                <th scope="col">Datum</th>
             </tr>
             </thead>
             <tbody>
-            <?php
-            while ($red = $result->fetch_array()) {
-                ?>
                 <tr>
                     <td><?php echo $red["predmet"] ?></td>
                     <td><?php echo $red["katedra"] ?></td>
@@ -62,9 +59,6 @@
                     </td>
 
                 </tr>
-                <?php
-            }
-            } ?>
             </tbody>
         </table>
         <div class="row" >
